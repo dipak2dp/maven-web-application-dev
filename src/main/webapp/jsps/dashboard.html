@@ -1,0 +1,539 @@
+<html>
+<head>
+<link rel="shortcut icon" href="IMAGES/co.manage.png">
+<link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link rel="stylesheet" href="CSS/fa/css/all.css">
+<link rel="stylesheet" href="CSS/jquery-ui.min.css">
+<script src="JS/login.js"></script> 
+<script src="JS/jquery-3.4.1.min.js"></script> 
+<script src="JS/jquery-ui.min.js"></script> 
+<link rel="stylesheet" href="CSS/mainstyle.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 dashleft-section">
+			<div class="dash-left-inner">
+			
+				<div class="row">
+					<div class="col-lg-3 sidepannel">
+						<div class="row"  style="padding: 0px !important;">
+							<div class="col-lg-12" style="padding: 0px !important;">
+								<div class="logo-background">
+									<div class="logo-container">
+										<img src="IMAGES/co.manage.png" height="30" width="30" class="img-fluid" style="border-radius: 50%;">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 leftmenuitem">
+								<ul>
+									<li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
+									<li><a href="#"><i class="fas fa-book"></i></a></li>
+									<li><a href="#"><i class="fas fa-user"></i></a></li>
+									<li><a href="#"><i class="fas fa-user-edit"></i></a></li>
+									<li><a href="#"><i class="fas fa-paste"></i></a></li>
+									<li><a href="#"><i class="fas fa-cog"></i></a></li>
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<div class="col-lg-9 companylogo">
+						<a href="#"><span style="font-size:18px;font-weight: bold;color:#1b2d49;opacity: 0.8">Co.Read</span></a>
+						<div class="row">
+							<div class="col-lg-12 menuitem">
+								<ul>
+									<li class="active"><a href="#">Dashboard</a></li>
+									<li><a href="blogs.html">Blogs And Articles</a></li>
+									<li><a href="author.html">Author Account</a></li>
+									<li><a href="editor.html">Editor Account</a></li>
+									<li><a href="report.html">Report</a></li>
+									<li><a href="setting.html">Settings</a></li>
+								<ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 second-menuitem">
+								<ul>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+									
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!----div 2 end--->
+		
+		
+		<!----div 10 start--->
+		<div class="col-lg-10" style="padding:0px !important;">
+			<div class="top-header">
+				
+					<div class="searchbar">
+						<div class="srch-container">
+							<div class="srch-icon">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="srch-txtbox">
+								<input type="text" placeholder="search here...">
+							</div>
+						</div>
+					</div>
+					<div class="icons text-right">
+						<i class="far fa-bell"></i>
+						<i class="far fa-envelope"></i>
+						<i class="far fa-smile"></i>
+					</div>
+
+					<div class="topuser-imgcontainer">
+							<div class="topprofileimg-box">
+								<img src="IMAGES/profile_user.jpg" height="31" width="31" style="border-radius:50%;cursor:pointer;">
+							</div>
+							<div class="user-profile-settings">
+								<ul>
+									<li><a href="myprofile.html"><i class="fas fa-user-circle"></i> My profile</a></li>
+									<li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+									<li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+								</ul>
+							</div>
+							
+					</div>
+
+					<div class="topuser-namecontainer">
+							<div class="profileuser-name">
+								<p>Shashanka Kumar Behera</p>
+							</div>
+							<div class="profileuser-role">
+								<p>Admin</p>
+							</div>
+							
+					</div>
+				
+			</div>
+
+
+
+			<!---breadcrumb start---->
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb" style="width:100%;position:fixed;margin-top:55px;background-color: rgb(247, 244, 244);padding:6px;z-index: 989;padding-left: 240px;font-size: 10px;text-transform: uppercase;">
+							<ul class="top-breadcrumb">
+								<li><a href="dashboard.html">home </a></li>
+								<li><a href="#">Dashboard</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			<!---breadcrumb end---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="dashright-section">
+				<div class="row section-gap">
+					<div class="col-lg-12">
+					<h5 class="heading-style"><i class="fas fa-tachometer-alt text-primary"></i> Dashboard</h5>
+						<p class="headparagraph-style">Manage Total Activity</p>
+				
+				<div class="row">
+					
+						<div class="col-lg-2 counter-section">
+							<div class="counter-innersection total-blog">
+							<div class="top-largecounter">
+								<p>Total Blogs</p>
+								<h6>1108</h6>
+							</div>
+							<div class="bottom-smallcounter">
+								<div class="smlcntr">
+									<p>Under Review</p>
+									<h6>45</h6>
+								</div>
+								<div class="smlcntr">
+									<p>Rejected</p>
+								<h6>45</h6>
+								</div>
+								
+							</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-2 counter-section">
+							<div class="counter-innersection">
+								<div class="top-largecounter">
+								<p>Author & users </p>
+								<h6>1108</h6>
+							</div>
+							<div class="bottom-smallcounter">
+								<div class="smlcntr">
+									<p>Editors</p>
+									<h6>45</h6>
+								</div>
+								<div class="smlcntr">
+									<p>Guest users</p>
+								<h6>45</h6>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-2 counter-section">
+							<div class="counter-innersection">
+								<div class="top-largecounter">
+								<p>Views</p>
+								<h6>1108</h6>
+							</div>
+							<div class="bottom-smallcounter">
+								<div class="bottom-smallcounter">
+								<div class="smlcntr">
+									<p>like</p>
+									<h6>453</h6>
+								</div>
+								<div class="smlcntr">
+									<p>dislike</p>
+								<h6>54</h6>
+								</div>
+								<div class="smlcntr">
+									<p>comment</p>
+								<h6>456</h6>
+								</div>
+								
+							</div>
+								
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-2 counter-section">
+							<div class="counter-innersection">
+								<div class="top-largecounter">
+								<p>Author & users </p>
+								<h6>1108</h6>
+							</div>
+							<div class="bottom-smallcounter">
+								<div class="smlcntr">
+									<p>Editors</p>
+									<h6>45</h6>
+								</div>
+								<div class="smlcntr">
+									<p>Guest users</p>
+								<h6>45</h6>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 counter-section" >
+							<div class="counter-innersection">
+								
+								<div class="bottom-smallcounter">
+									<div class="mostviewblog-title">
+										<div class="mstview-title">
+											<p>Most viewed Blog.</p>
+											<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
+										</div>
+										<div class="details-footer">
+											<div class="performer-img">
+												<img src="IMAGES/profile_user.jpg" class="img-fluid " style="border-radius:50%;">
+											</div>
+											<div class="performer-nameandrole">
+												<p>wiil smith</p>
+												<a href="#">Author And Editor</a>
+											</div>
+											<div class="mst-views">
+												<h6>13089 views</h6>
+												
+											</div>
+										</div>
+										
+									</div>
+									<div class="mostviewblog-imgsection">
+										<img src="IMAGES/markus.jpg" class="img-fluid">
+
+									</div>
+									
+									
+									
+								</div>
+							</div>
+						</div>
+						
+					
+					</div>
+						
+						
+					</div>
+					<div class=""></div>
+				</div>
+				
+				<div class="row ">
+					<div class="col-lg-5 chart-section">
+						<canvas id="line-chart"></canvas>	
+					</div>
+					
+					<!----------chart start---------------->
+					<div class="col-lg-7 ">
+						<h5 class="heading-style"><i class="fas fa-tachometer-alt text-primary"></i> Performers Of The Month</h5>
+						<div class="performers-container">
+							<div class="container-section">
+								<div class="performer-img">
+									<img src="IMAGES/profile_user.jpg" class="img-fluid " style="border-radius:50%;">
+								</div>
+								<div class="performer-nameandrole">
+									<p>wiil smith</p>
+									<a href="#">Author And Editor</a>
+								</div>
+								
+								<div class="performer-action">
+									<div class="total">Total blog</div>
+									<div class="number">678</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Total Views</div>
+									<div class="number">1238</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Rejected</div>
+									<div class="number">0</div>
+								</div>
+								<div class="performer-viewprofile">
+									<button class="btn btn-sm">View Profile</button>
+								</div>
+								
+							</div>
+							
+							<div class="container-section">
+								<div class="performer-img">
+									<img src="IMAGES/profile_user.jpg" class="img-fluid " style="border-radius:50%;">
+								</div>
+								<div class="performer-nameandrole">
+									<p>wiil smith</p>
+									<a href="#">Author And Editor</a>
+								</div>
+								
+								<div class="performer-action">
+									<div class="total">Total blog</div>
+									<div class="number">678</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Total Views</div>
+									<div class="number">1238</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Rejected</div>
+									<div class="number">0</div>
+								</div>
+								<div class="performer-viewprofile">
+									<button class="btn btn-sm btn-primary">View Profile</button>
+								</div>
+								
+							</div>
+							
+							<div class="container-section">
+								<div class="performer-img">
+									<img src="IMAGES/profile_user.jpg" class="img-fluid " style="border-radius:50%;">
+								</div>
+								<div class="performer-nameandrole">
+									<p>wiil smith</p>
+									<a href="#">Author And Editor</a>
+								</div>
+								
+								<div class="performer-action">
+									<div class="total">Total blog</div>
+									<div class="number">678</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Total Views</div>
+									<div class="number">1238</div>
+								</div>
+								<div class="performer-action">
+									<div class="total">Rejected</div>
+									<div class="number">0</div>
+								</div>
+								<div class="performer-viewprofile">
+									<button class="btn btn-sm btn-primary">View Profile</button>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+											
+					</div>
+					<!----------chart end---------------->
+					
+				</div>
+
+
+
+					
+
+						<div class="row">
+							<div class="col-lg-5 section-gap">
+
+								<h5 class="heading-style"><i class="fas fa-tachometer-alt text-primary"></i> Trending Blogs</h5>
+						<div class="trending-section">
+							<div class="container-section">
+								<div class="blog-img">
+									<img src="IMAGES/setting.png" class="img-fluid">
+								</div>
+								<div class="blog-content">
+									<div class="blog-title">
+										<h6>Lorem Ipsum is simply dummy text of the printing.</h6>
+									</div>
+									<div class="view-more">
+										<div class="view-link">
+											<a href="#">View Blog</a>
+										</div>
+										<div class="Author-section">
+											<img src="IMAGES/profile_user.jpg" class="blog-author">
+										</div>
+										<div class="publish-day">
+											<a href="#">John. steve</a>
+											<p>1 day ago.</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="container-section">
+								<div class="blog-img">
+									<img src="IMAGES/work_pack_white-01_4x.png" class="img-fluid">
+								</div>
+								<div class="blog-content">
+									<div class="blog-title">
+										<h6>scrambled it to make a type specimen book.</h6>
+									</div>
+									<div class="view-more">
+										<div class="view-link">
+											<a href="#">View Blog</a>
+										</div>
+										<div class="Author-section">
+											<img src="IMAGES/profile_user.jpg" class="blog-author">
+											
+										</div>
+										<div class="publish-day">
+											<a href="#">John. Mades</a>
+											<p>1 day ago.</p>
+										</div>
+										
+									</div>
+									
+								</div>
+							</div>
+						</div>
+								
+							</div>
+
+							
+							<div class="col-lg-7 chart-section">
+								<canvas id="myChart2"></canvas>
+							</div>
+
+							
+						</div>
+					
+
+
+
+			</div>
+			
+		</div>
+		<!----div 10 end--->
+		
+		
+	</div>
+</div>
+
+<script>
+	
+var ctx = $("#line-chart");
+
+var lineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    datasets: [
+      {
+        label: "2015",
+        data: [10,8,6,5,12,8,16,17,6,7,6,10]
+      }
+    ]
+  }
+});
+</script>
+
+
+
+<script>
+var ctx = document.getElementById('myChart2').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth:0.5
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+</body>
+</html>

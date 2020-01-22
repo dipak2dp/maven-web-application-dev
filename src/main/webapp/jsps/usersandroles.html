@@ -1,0 +1,527 @@
+<html>
+<head>
+<link rel="shortcut icon" href="IMAGES/co.manage.png">
+<link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link rel="stylesheet" href="CSS/fa/css/all.css">
+<link rel="stylesheet" href="CSS/jquery-ui.min.css">
+<script src="JS/login.js"></script> 
+<script src="JS/jquery-3.4.1.min.js"></script> 
+<script src="JS/jquery-ui.min.js"></script> 
+<script src="JS/usersandroles.js"></script>
+<link rel="stylesheet" href="CSS/mainstyle.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 dashleft-section">
+			<div class="dash-left-inner">
+			
+				<div class="row">
+					<div class="col-lg-3 sidepannel">
+						<div class="row"  style="padding: 0px !important;">
+							<div class="col-lg-12" style="padding: 0px !important;">
+								<div class="logo-background">
+									<div class="logo-container">
+										<img src="IMAGES/co.manage.png" height="30" width="30" class="img-fluid" style="border-radius: 50%;">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 leftmenuitem">
+								<ul>
+									<li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
+									<li><a href="#"><i class="fas fa-book"></i></a></li>
+									<li><a href="#"><i class="fas fa-user"></i></a></li>
+									<li><a href="#"><i class="fas fa-user-edit"></i></a></li>
+									<li><a href="#"><i class="fas fa-paste"></i></a></li>
+									<li><a href="#"><i class="fas fa-cog"></i></a></li>
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<div class="col-lg-9 companylogo">
+						<a href="#"><span style="font-size:18px;font-weight: bold;color:#1b2d49;opacity: 0.8">Co.Read</span></a>
+						<div class="row">
+							<div class="col-lg-12 menuitem">
+								<ul>
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="blogs.html">Blogs And Articles</a></li>
+									<li><a href="author.html">Author Account</a></li>
+									<li><a href="editor.html">Editor Account</a></li>
+									<li><a href="#">Report</a></li>
+									<li class="active"><a href="setting.html">Settings</a></li>
+								<ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 second-menuitem">
+								<ul>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+									
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!----div 2 end--->
+		
+		
+		<!----div 10 start--->
+		<div class="col-lg-10" style="padding:0px !important;">
+			<div class="top-header">
+				
+					<div class="searchbar">
+						<div class="srch-container">
+							<div class="srch-icon">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="srch-txtbox">
+								<input type="text" placeholder="search here...">
+							</div>
+						</div>
+					</div>
+					<div class="icons text-right">
+						<i class="far fa-bell"></i>
+						<i class="far fa-envelope"></i>
+						<i class="far fa-smile"></i>
+					</div>
+					<div class="topuser-imgcontainer">
+							<div class="topprofileimg-box">
+								<img src="IMAGES/profile_user.jpg" height="31" width="31" style="border-radius:50%;cursor:pointer;">
+							</div>
+							<div class="user-profile-settings">
+								<ul>
+									<li><a href="#"><i class="fas fa-user-circle"></i> My profile</a></li>
+									<li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+									<li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+								</ul>
+							</div>
+							
+					</div>
+					<div class="topuser-namecontainer">
+							<div class="profileuser-name">
+								<p>Shashanka Kumar Behera</p>
+							</div>
+							<div class="profileuser-role">
+								<p>Admin</p>
+							</div>
+							
+					</div>
+				
+			</div>
+			
+			
+
+
+			<!---breadcrumb start---->
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb" style="width:100%;position:fixed;margin-top:55px;background-color: rgb(247, 244, 244);padding:6px;z-index: 989;padding-left: 240px;font-size: 10px;text-transform: uppercase;">
+							<ul class="top-breadcrumb">
+								<li><a href="dashboard.html">home </a></li>
+								<li><a href="setting.html">settings </a></li>
+								<li><a href="#">users And Roles </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			<!---breadcrumb end---->
+			
+			
+			
+			
+			<!---Dashboard right section start--->
+			
+			
+			<div class="dashright-section">
+				<div class="row">
+					<div class="col-lg-10">
+						<h5 class="heading-style"><i class="fas fa-users text-primary"></i> Users And Roles</h5>
+						<p class="headparagraph-style">Manage users & Roles</p>
+						
+					</div>
+					<div class="col-lg-2">
+						<button class="prestyle-buttons" onclick="addnewuser()"><i class="fa fa-plus-circle"></i> Add users</button>
+
+					</div>
+					
+				</div>
+				
+				<div class="userslist-section">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="search-box">
+								<input type="text" placeholder="Search here...">
+								<i class="fa fa-search"></i>
+							</div>
+							
+						</div>
+						<div class="col-lg-2">
+							<div class="filter-box">
+								<select>
+									<option>select All</option>
+									<option>10 out of list</option>
+								</select>
+							</div>
+							
+						</div>
+						<div class="col-lg-7"></div>
+						
+						
+					</div>
+					
+					
+					
+						<div class="usr-lists-tbl">
+							<div class="user-details-head">
+								<table class="tbl table-padded">
+									<thead>
+										<tr>
+											<th>UserId</th>
+											<th>Name</th>
+											<th>Roles</th>
+											<th>Joined</th>
+											<th>Status</th>
+											<th>Details</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+									
+									<tr>
+										<td>1101</td>
+										<td style="display:flex;">
+											<div class="users-img">
+												<img src="IMAGES/profile_user.jpg" class="img-fluid">
+											</div>
+											<div class="userslist-name">
+												<p>John Smith</p>
+											</div>
+											
+										</td>
+										<td><span class="userrole-btn">Admin</span></td>
+										<td>5-6-2019</td>
+										<td><div class="status-pill green"></div>Active</td>
+										<td>
+											<div class="userlist-email"><i class="far fa-envelope"></i> john.4008@gmail.com</div>
+											<div class="userlist-phoneno"><i class="fa fa-phone"></i> 8987564320</div>
+										</td>
+										<td>
+											<i class="fas fa-pencil-alt text-success user-action-icon"></i>
+											<i class="far fa-trash-alt text-danger user-action-icon"></i>
+											<button class="viewprofile-btn btn-primary"> View <i class="fas fa-long-arrow-alt-right"></i></button>
+											
+										</td>
+									</tr>
+									
+									<tr>
+										<td>1102</td>
+										<td style="display:flex;">
+											<div class="users-img">
+												<img src="IMAGES/avatar4.jpg" class="img-fluid">
+											</div>
+											<div class="userslist-name">
+												<p>wiiliam joseph</p>
+											</div>
+											
+										</td>
+										<td><span class="userrole-btn">Author & Editor</span></td>
+										<td>5-6-2019</td>
+										<td><div class="status-pill red"></div>Inctive</td>
+										<td>
+											<div class="userlist-email"><i class="far fa-envelope"></i> william@gmail.com</div>
+											<div class="userlist-phoneno"><i class="fa fa-phone"></i> 8987564320</div>
+										</td>
+										<td>
+											<i class="fas fa-pencil-alt text-success user-action-icon"></i>
+											<i class="far fa-trash-alt text-danger user-action-icon"></i>
+											<button class="viewprofile-btn btn-primary"> View <i class="fas fa-long-arrow-alt-right"></i></button>
+											
+										</td>
+									</tr>
+									
+									<tr>
+										<td>1103</td>
+										<td style="display:flex;">
+											<div class="users-img">
+												<img src="IMAGES/avatar3.jpg" class="img-fluid">
+											</div>
+											<div class="userslist-name">
+												<p>steve miky</p>
+											</div>
+											
+										</td>
+										<td><span class="userrole-btn">Editor</span></td>
+										<td>5-6-2019</td>
+										<td><div class="status-pill green"></div>Active</td>
+										<td>
+											<div class="userlist-email"><i class="far fa-envelope"></i> Miky@gmail.com</div>
+											<div class="userlist-phoneno"><i class="fa fa-phone"></i> 8987564320</div>
+										</td>
+										<td>
+											<i class="fas fa-pencil-alt text-success user-action-icon"></i>
+											<i class="far fa-trash-alt text-danger user-action-icon"></i>
+											<button class="viewprofile-btn btn-primary"> View <i class="fas fa-long-arrow-alt-right"></i></button>
+											
+										</td>
+									</tr>
+									
+									<tr>
+										<td>1104</td>
+										<td style="display:flex;">
+											<div class="users-img">
+												<img src="IMAGES/avatar2.jpg" class="img-fluid">
+											</div>
+											<div class="userslist-name">
+												<p>sammy willstn</p>
+											</div>
+											
+										</td>
+										<td><span class="userrole-btn">Author & Editor</span></td>
+										<td>5-6-2019</td>
+										<td><div class="status-pill red"></div>Inactive</td>
+										<td>
+											<div class="userlist-email"><i class="far fa-envelope"></i> sammy.123@gmail.com</div>
+											<div class="userlist-phoneno"><i class="fa fa-phone"></i> 8987564320</div>
+										</td>
+										<td>
+											<i class="fas fa-pencil-alt text-success user-action-icon"></i>
+											<i class="far fa-trash-alt text-danger user-action-icon"></i>
+											<button class="viewprofile-btn btn-primary"> View <i class="fas fa-long-arrow-alt-right"></i></button>
+											
+										</td>
+									</tr>
+									
+									<tr>
+										<td>1105</td>
+										<td style="display:flex;">
+											<div class="users-img">
+												<img src="IMAGES/avatar1.jpg" class="img-fluid">
+											</div>
+											<div class="userslist-name">
+												<p>Johan steve</p>
+											</div>
+											
+										</td>
+										<td><span class="userrole-btn">Admin</span></td>
+										<td>5-6-2019</td>
+										<td><div class="status-pill green"></div>Active</td>
+										<td>
+											<div class="userlist-email"><i class="far fa-envelope"></i> Johan@gmail.com</div>
+											<div class="userlist-phoneno"><i class="fa fa-phone"></i> 8987564320</div>
+										</td>
+										<td>
+											<i class="fas fa-pencil-alt text-success user-action-icon"></i>
+											<i class="far fa-trash-alt text-danger user-action-icon"></i>
+											<button class="viewprofile-btn btn-primary"> View <i class="fas fa-long-arrow-alt-right"></i></button>
+											
+										</td>
+									</tr>
+									
+									
+									
+								</tbody>
+								<table>	
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12">
+								<ul class="pagination pagination-sm justify-content-center" style="margin-top:15px;">
+									<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+									<li class="page-item"><a href="#" class="page-link active-pagination">1</a></li>
+									<li class="page-item"><a href="#" class="page-link">2</a></li>
+									<li class="page-item"><a href="#" class="page-link">3</a></li>
+									<li class="page-item"><a href="#" class="page-link">4</a></li>
+									<li class="page-item"><a href="#" class="page-link">Next</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					
+					
+				</div>
+				
+				<div class="add-usr-background" id="addusr">
+					<div class="add-user">
+						
+						<div class="adduser-header">
+							<div class="addusrheader-text">
+								<h6>Add New User</h6>
+								<p>Create new User.Please Fill All The Details.</p>
+							</div>
+							<div class="addusrheader-img">
+								
+							</div>
+						
+							
+						</div>
+						<div class="addusr-form">
+							<div class="row">
+								<div class="col-lg-8">
+									<label>Name</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="input-type">
+											<input type="text" placeholder="Enter Name" >
+										</div>
+									</div>
+									
+								</div>
+								<div class="col-lg-4">
+									<label>Role</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-user-circle"></i>
+										</div>
+										<div class="input-type">
+											<select>
+												<option class="form-control">Admin</option>
+												<option>Author</option>
+												<option>Editor</option>
+												<option>Author & Editor</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Email</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<div class="input-type">
+											<input type="email" placeholder="eg: xyz@gmail.com">
+										</div>
+									</div>	
+								</div>
+								<div class="col-lg-6">
+									<label>Phone No</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="input-type">
+											<input type="email" placeholder="eg : +91-7898789890" >
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<label>Company Name</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-building"></i>
+										</div>
+										<div class="input-type">
+											<input type="text" placeholder="eg: xyz technology pvt.ltd" >
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Date Of Join</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="input-type">
+											<input type="date">
+										</div>
+									</div>	
+								</div>
+								<div class="col-lg-6">
+									<label>Gender</label>
+									<div class="input-box">
+										<div class="icon-box">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="input-type">
+											<div class="custom-control custom-control-inline custom-radio">
+												<input type="radio" class="custom-control-input" id="maleradio" name="gender" value="male"/>
+												<label class="custom-control-label" for="maleradio">Male</label>
+											</div>
+											<div class="custom-control custom-control-inline custom-radio">
+												<input type="radio" class="custom-control-input" id="femaleradio" name="gender" value="male"/>
+												<label class="custom-control-label" for="femaleradio">Female</label>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12"style="display:flex;">
+									
+									<div class="addusr-img" style="width:40px;height:40px;border-radius:50%;border:3px solid white;box-shadow:2px 0px 5px rgba(50, 19, 221,0.3);">
+										<img src="IMAGES/avatar1.jpg" class="img-fluid" style="border-radius:50%;">
+									</div>
+									<div><input type="file"></div>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<label>Address</label>
+									<textarea  class="form-control" placeholder="Enter Address"></textarea>
+									
+								</div>
+							</div>
+								
+						
+						</div>
+						
+						<div class="adduser-footer">
+							<button class="btn prestyle-buttons"><i class="fa fa-save"></i> Save user</button>
+							<button class="btn prestyle-buttons" onclick="closeAddUser()"><i class="fas fa-times"></i> Close</button>
+							
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			<!---Dashboard right section end--->
+			
+			
+			
+		</div>
+		<!----div 10 end--->
+		
+		
+	</div>
+
+</div>
+
+</body>
+</html>

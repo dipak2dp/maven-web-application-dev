@@ -1,0 +1,515 @@
+<html>
+<head>
+<link rel="shortcut icon" href="IMAGES/co.manage.png">
+<link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link rel="stylesheet" href="CSS/fa/css/all.css">
+<link rel="stylesheet" href="CSS/jquery-ui.min.css">
+<script src="JS/login.js"></script> 
+<script src="JS/jquery-3.4.1.min.js"></script> 
+<script src="JS/jquery-ui.min.js"></script> 
+<script src="JS/usersandroles.js"></script>
+<link rel="stylesheet" href="CSS/mainstyle.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 dashleft-section">
+			<div class="dash-left-inner">
+			
+				<div class="row">
+					<div class="col-lg-3 sidepannel">
+						<div class="row"  style="padding: 0px !important;">
+							<div class="col-lg-12" style="padding: 0px !important;">
+								<div class="logo-background">
+									<div class="logo-container">
+										<img src="IMAGES/co.manage.png" height="30" width="30" class="img-fluid" style="border-radius: 50%;">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 leftmenuitem">
+								<ul>
+									<li><a href="#"><i class="fas fa-tachometer-alt"></i></a></li>
+									<li><a href="#"><i class="fas fa-book"></i></a></li>
+									<li><a href="#"><i class="fas fa-user"></i></a></li>
+									<li><a href="#"><i class="fas fa-user-edit"></i></a></li>
+									<li><a href="#"><i class="fas fa-paste"></i></a></li>
+									<li><a href="#"><i class="fas fa-cog"></i></a></li>
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<div class="col-lg-9 companylogo">
+						<a href="#"><span style="font-size:18px;font-weight: bold;color:#1b2d49;opacity: 0.8">Co.Read</span></a>
+						<div class="row">
+							<div class="col-lg-12 menuitem">
+								<ul>
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="blogs.html">Blogs And Articles</a></li>
+									<li><a href="author.html">Author Account</a></li>
+									<li><a href="editor.html">Editor Account</a></li>
+									<li><a href="#">Report</a></li>
+									<li class="active"><a href="setting.html">Settings</a></li>
+								<ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 second-menuitem">
+								<ul>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+									
+								<ul>
+							</div>
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!----div 2 end--->
+		
+		
+		<!----div 10 start--->
+		<div class="col-lg-10" style="padding:0px !important;">
+			<div class="top-header">
+				
+					<div class="searchbar">
+						<div class="srch-container">
+							<div class="srch-icon">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="srch-txtbox">
+								<input type="text" placeholder="search here...">
+							</div>
+						</div>
+					</div>
+					<div class="icons text-right">
+						<i class="far fa-bell"></i>
+						<i class="far fa-envelope"></i>
+						<i class="far fa-smile"></i>
+					</div>
+					<div class="topuser-imgcontainer">
+							<div class="topprofileimg-box">
+								<img src="IMAGES/profile_user.jpg" height="31" width="31" style="border-radius:50%;cursor:pointer;">
+							</div>
+							<div class="user-profile-settings">
+								<ul>
+									<li><a href="#"><i class="fas fa-user-circle"></i> My profile</a></li>
+									<li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+									<li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+								</ul>
+							</div>
+							
+					</div>
+					<div class="topuser-namecontainer">
+							<div class="profileuser-name">
+								<p>Shashanka Kumar Behera</p>
+							</div>
+							<div class="profileuser-role">
+								<p>Admin</p>
+							</div>
+							
+					</div>
+				
+			</div>
+			
+			
+
+
+			<!---breadcrumb start---->
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb" style="width:100%;position:fixed;margin-top:55px;background-color: rgb(247, 244, 244);padding:6px;z-index: 989;padding-left: 240px;font-size: 10px;text-transform: uppercase;">
+							<ul class="top-breadcrumb">
+								<li><a href="dashboard.html">home </a></li>
+								<li><a href="setting.html">settings </a></li>
+								<li><a href="#">Activity log </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			<!---breadcrumb end---->
+			
+			
+			
+			
+			<!---Dashboard right section start--->
+			
+			
+			<div class="dashright-section">
+				
+				<div class="row">
+					<div class="col-lg-10">
+						<h5 class="heading-style"><i class="fas fa-users text-primary"></i> Activity Log</h5>
+						<p class="headparagraph-style">Manage Users Activity</p>	
+					</div>
+				</div>	
+
+				<!---------activity section start---------->
+
+					<div class="row activity-log-topbar">
+						<div class="col-lg-4">
+							<div class="ctgory-srchbox">
+								<div class="srchicn">
+									<i class="fa fa-search"></i>
+								</div>
+								<div class="inputbox">
+									<input type="text" placeholder="search User">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-1"></div>
+						<div class="col-lg-2 from-date text-right">
+							<i class="far fa-calendar-alt"></i> 23/4/2019
+						</div>
+						<div class="col-lg-1 text-center to">TO</div>
+						<div class="col-lg-2 to-date">
+							<i class="far fa-calendar-alt"></i> 23/4/2019
+						</div>
+						<div class="col-lg-1 text-right">
+							<button class="action-buttons">Reset</button>
+						</div>
+						<div class="col-lg-1">
+							<button class="prestyle-buttons">Apply</button>
+						</div>
+					</div>
+
+					<div class="activitylist-section">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="selectdate-section">
+									<span>TODAY</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar7.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">Two Blogs Update And Status Resolved "Suspected  Series"</p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#">+5 More</a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">12:45 PM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>Steve Joseph</span></p>
+										</div>
+									</div>
+
+									<div class="Activities-title-sec">
+										<p class="actvty-add-blog">Lorem Ipsum is simply dummy text of the printing.</p>
+										<p class="actvty-add-blog">It was popularised in the 1960s with the release of Letraset sheets containing</p>
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar1.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">1 Blog Deleted "Lorem Ipsum"</p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#">+12 More</a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">10:45 AM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>Wiliam Hash</span></p>
+										</div>
+									</div>
+
+									<div class="Activities-title-sec">
+										<p class="actvty-delete-blog">Lorem Ipsum is simply dummy text of the printing.</p>
+										
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+
+
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar4.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">Updated Photos In Blog Id 4534. </p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#"></a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">10:45 AM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>jesica wasim</span></p>
+										</div>
+									</div>
+
+									<div class="row Activities-title-sec">
+										<div class="col-lg-2">
+											<img src="IMAGES/illustration_design_in_progress_tubik.png" class="img-fluid">
+										</div>
+										<div class="col-lg-2">
+											<img src="IMAGES/markus.jpg" class="img-fluid">
+										</div>
+										<div class="col-lg-2">
+											<img src="IMAGES/work.jpg" class="img-fluid">
+										</div>
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar2.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">Email id Updated .</p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#">+8 More</a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">10:00 AM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>Stack Willsn</span></p>
+										</div>
+									</div>
+
+									<div class="Activities-title-sec">
+										<p>Email Change To : <a href="#">StackWillsn342@yahoo.com</a></p>
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="selectdate-section">
+									<span>YESTERDAY</span>
+								</div>
+							</div>
+						</div>
+				
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar2.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">Email id Updated .</p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#">+8 More</a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">10:00 AM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>Stack Willsn</span></p>
+										</div>
+									</div>
+
+									<div class="Activities-title-sec">
+										<p>Email Change To : <a href="#">StackWillsn342@yahoo.com</a></p>
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="activity-user">
+									<div class="users-img">
+										<img src="IMAGES/avatar7.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="activities-sec">
+									<div class="row actvty-title-actionbar">
+										<div class="col-lg-9">
+											<p class="activity-title">Two Blogs Update And Status Resolved "Suspected  Series"</p>
+										</div>
+										<div class="col-lg-3 text-right activity-action-sec">
+											<a href="#">+5 More</a> 
+											<i class="fa fa-envelope text-primary"></i>
+											<i class="fa fa-trash-alt text-danger"></i>
+											
+										</div>
+									</div>
+									
+									<div class="time-and-by">
+										<div class="actvtytime">
+											<p class="actvty-time-section">12:45 PM</p>
+										</div>
+										<div class="actvtyby">
+											<p class="actvty-bysection">By <span>Steve Joseph</span></p>
+										</div>
+									</div>
+
+									<div class="Activities-title-sec">
+										<p class="actvty-add-blog">Lorem Ipsum is simply dummy text of the printing.</p>
+										<p class="actvty-add-blog">It was popularised in the 1960s with the release of Letraset sheets containing</p>
+									</div>
+									
+								</div>
+								<hr>
+							</div>
+						</div>
+
+
+
+
+
+
+
+					</div>
+				<!---------activity section end---------->
+
+			</div>
+			
+			
+			<!---Dashboard right section end--->
+			
+			
+			
+		</div>
+		<!----div 10 end--->
+		
+		
+	</div>
+
+</div>
+
+</body>
+</html>
